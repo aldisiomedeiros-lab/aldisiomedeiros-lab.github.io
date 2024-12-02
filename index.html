@@ -10,24 +10,59 @@
     <title>Lista de Tarefas PWA</title>
     <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Parallax container */
+        .parallax {
+            position: relative;
+            height: 100vh; /* Full screen height */
+            background-image: url('https://via.placeholder.com/1920x1080'); /* Replace with your image */
+            background-attachment: fixed; /* Fix the background image */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Content section */
+        .content {
+            padding: 50px;
+            text-align: center;
+            background: #f4f4f4;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-    <div class="MainContainer">
 
-        <div class="Parallax">
-          // Conteúdo
-        </div>
-      
-        <div class="Content">
-          <div class="Content1">
-             
-                <h1>Lista de Tarefas</h1>
+     <!-- Parallax Section -->
+    <div class="parallax"></div>
+
+    <!-- Content Section -->
+    <div class="content">
+       <h1>Lista de Tarefas</h1>
                 <input type="text" id="nova-tarefa" placeholder="Nova tarefa">
                 <button onclick="adicionarTarefa()">Adicionar</button>
                 <ul id="lista-tarefas"></ul>
                 <script src="app.js"></script>
-          </div>
-        </div>
-      </div>
+    </div>
+
+    <!-- Another Parallax Section -->
+    <div class="parallax"></div>
+    
 </body>
 </html>
