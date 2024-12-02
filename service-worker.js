@@ -8,8 +8,7 @@ const URLS_TO_CACHE = [
     '/app.js',
     '/manifest.json',
     '/icons/icon-192x192.png',
-    '/icons/icon-512x512.png',
-    '/icons/bg-list-tasks.jpg'
+    '/icons/icon-512x512.png'
 ];
 
 // Evento de instalação do Service Worker
