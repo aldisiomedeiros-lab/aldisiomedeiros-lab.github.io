@@ -44,41 +44,55 @@ li {
 }
 
 
- body, html {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            overflow-x: hidden;
-            background-color: #f9f9f9;
-            color: #333;
-            text-align: center;
-            padding: 20px;
-            margin: 0;
-        }
+body, html {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+        background-color: #f9f9f9;
+        color: #333;
+        text-align: center;
+        /*padding: 20px;*/
+        margin: 0;
+    }
 
-        /* Parallax container */
-        .parallax {
-            position: relative;
-            height: 100vh; /* Full screen height */
-            background-image: url('/icons/bg-list-tasks.jpg'); /* Replace with your image */
-            background-attachment: fixed; /* Fix the background image */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+/* Parallax container */
+.parallax1 {
+    position: relative;
+    height: 30vh; /* Full screen height */
+    background-image: url('/icons/bg-list-tasks.jpg'); /* Replace with your image */
+    background-attachment: fixed; /* Fix the background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-        /* Content section */
-        .content {
-            padding: 5px;
-            text-align: center;
-            background: #f4f4f4;
-        }
+.parallax2 {
+    position: relative;
+    height: 100vh; /* Full screen height */
+    background-image: url('/icons/bg-list-tasks.jpg'); /* Replace with your image */
+    background-attachment: fixed; /* Fix the background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+/* Content section */
+.content {
+    /*padding: 5px;*/
+    text-align: center;
+    background: #f4f4f4;
+    background-position: center;
+    
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
 
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
