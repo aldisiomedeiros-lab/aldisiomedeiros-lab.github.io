@@ -16,11 +16,6 @@
             "src": "/icons/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
-        },
-        {
-            "src": "/icons/bg-list-tasks.jpg",
-            "sizes": "6720x4480",
-            "type": "image/jpg"
         }
     ]
 }
