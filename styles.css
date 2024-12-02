@@ -1,13 +1,5 @@
 /* styles.css */
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-}
 
 h1 {
     color: #007bff;
@@ -52,26 +44,41 @@ li {
 }
 
 
-.MainContainer {
-    perspective: 1px;
-    transform-style: preserve-3d;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
-  
-  .Parallax {
-    display: flex;
-    flex: 1 0 auto;
-    position: relative;
-    height: 100vh;
-    transform: translateZ(-1px) scale(2);
-    z-index: -1;
-  }
-  
-  .Content {
-    display: block;
-    position: relative;
-    background-color: white;
-    z-index: 1;
-  }
+ body, html {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        /* Parallax container */
+        .parallax {
+            position: relative;
+            height: 100vh; /* Full screen height */
+            background-image: url('/icons/bg-list-tasks.jpg'); /* Replace with your image */
+            background-attachment: fixed; /* Fix the background image */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Content section */
+        .content {
+            padding: 5px;
+            text-align: center;
+            background: #f4f4f4;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
