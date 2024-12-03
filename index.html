@@ -3,14 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha PWA</title>
+    <title>Minha Calculadora PWA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .calculator {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        input {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        button {
+            width: 48%;
+            padding: 10px;
+            margin: 1%;
+            cursor: pointer;
+        }
+    </style>
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <h1>Bem vindo a minha primeira PWA</h1>
-    <h4>Desensolvida por: Fulano</h4>
-    <p>Este é um exemplo de parágrafo.</p>
+   <div class="calculator">
+        <h2>Calculadora</h2>
+        <form id="calcForm">
+            <label for="number1">Número 1:</label><br>
+            <input type="number" id="number1" required><br>
+            <label for="number2">Número 2:</label><br>
+            <input type="number" id="number2" required><br>
+            <label for="result">Resultado:</label><br>
+            <input type="text" id="result" readonly><br>
+            <button type="button" onclick="calculate('add')">Somar</button>
+            <button type="button" onclick="calculate('subtract')">Subtrair</button>
+            <button type="button" onclick="calculate('multiply')">Multiplicar</button>
+            <button type="button" onclick="calculate('divide')">Dividir</button>
+        </form>
+    </div>
+    <script>
+        function calculate(operation) {
+            const num1 = parseFloat(document.getElementById("number1").value);
+            const num2 = parseFloat(document.getElementById("number2").value);
+            let result;
+
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Por favor, insira números válidos.");
+                return;
+            }
+
+            switch (operation) {
+                case 'add':
+                    result = num1 + num2;
+                    break;
+                case 'subtract':
+                    result = num1 - num2;
+                    break;
+                case 'multiply':
+                    result = num1 * num2;
+                    break;
+                case 'divide':
+                    if (num2 === 0) {
+                        alert("Divisão por zero não é permitida.");
+                        return;
+                    }
+                    result = num1 / num2;
+                    break;
+                default:
+                    alert("Operação inválida.");
+                    return;
+            }
+
+            document.getElementById("result").value = result;
+        }
+    </script>
     <script src="app.js"></script>
 </body>
 </html>
