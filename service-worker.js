@@ -1,5 +1,5 @@
 const CACHE_NAME = "my-pwa-cache-v1";
-const ASSETS = [
+const URLS_TO_CACHE = [
     "./",
     "./index.html",
     "./styles.css",
