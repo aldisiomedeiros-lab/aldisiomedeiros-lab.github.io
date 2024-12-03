@@ -1,14 +1,11 @@
-// service-worker.js
-
-const CACHE_NAME = 'pwa-lista-tarefas-cache-v1';
-const URLS_TO_CACHE = [
-    '/',
-    '/index.html',
-    '/styles.css',
-    '/app.js',
-    '/manifest.json',
-    '/icons/icon-192x192.png',
-    '/icons/icon-512x512.png'
+const CACHE_NAME = "my-pwa-cache-v1";
+const ASSETS = [
+    "./",
+    "./index.html",
+    "./styles.css",
+    "./app.js",
+    "./icons/icon-192x192.png",
+    "./icons/icon-512x512.png"
 ];
 
 // Evento de instalação do Service Worker

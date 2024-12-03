@@ -1,11 +1,10 @@
 {
-    "name": "Lista de Tarefas PWA",
-    "short_name": "Tarefas",
-    "start_url": "/index.html",
+    "name": "Minha PWA",
+    "short_name": "MinhaPWA",
+    "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#ffffff",
-    "theme_color": "#007bff",
-    "description": "Uma aplicação PWA simples para gerenciar tarefas",
+    "theme_color": "#333333",
     "icons": [
         {
             "src": "/icons/icon-192x192.png",
