@@ -2,7 +2,7 @@
     "name": "Minha PWA",
     "short_name": "MinhaPWA",
     "start_url": "./index.html",
-    "display": "fullscreen",
+    "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#333333",
     "icons": [
