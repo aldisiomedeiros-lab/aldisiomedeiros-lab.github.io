@@ -14,11 +14,13 @@ if ('serviceWorker' in navigator) {
 if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(
         (position) => {
+            alert("Latitude:" +  String(position.coords.latitude) + ", Longitude: "+ String(position.coords.longitude));
+            
             console.log("Latitude:", position.coords.latitude);
             console.log("Longitude:", position.coords.longitude);
         },
-        (error) => console.error("Error getting location:", error)
+        (error) => alert("Error getting location:", error)
     );
 } else {
-    console.log("Geolocation is not supported by this browser.");
+    alert("Geolocation is not supported by this browser.");
 }
