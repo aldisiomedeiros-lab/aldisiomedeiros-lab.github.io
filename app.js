@@ -9,3 +9,16 @@ if ('serviceWorker' in navigator) {
             console.error('O registro do Service Worker falhou:', error);
         });
 }
+
+// geolocation
+if ("geolocation" in navigator) {
+    navigator.geolocation.getCurrentPosition(
+        (position) => {
+            console.log("Latitude:", position.coords.latitude);
+            console.log("Longitude:", position.coords.longitude);
+        },
+        (error) => console.error("Error getting location:", error)
+    );
+} else {
+    console.log("Geolocation is not supported by this browser.");
+}
